@@ -1,0 +1,130 @@
+*{
+    font-family: 'Montserrat', sans-serif ;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #00180d;
+    background-image: url(../_img/background.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+#container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.card{
+    width: 100%;
+    background: transparent;
+    backdrop-filter: blur(15px);
+    padding: 40px;
+    border-radius: 20px;
+    width: 280px;
+    box-shadow: 2px 2px 2px 1px white;
+}
+
+.voltar{
+    width: 10%;
+    font-size: 25px;
+/*     border: red solid 2px; */
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 1px black;
+    transition: 0.5s;
+}
+
+.voltar:hover{
+    background-color: black;
+    box-shadow: 2px 2px 2px 1px white;
+}
+
+.voltar .voltar-button{
+    color: white;
+    text-decoration: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.header{
+    padding-bottom: 50px;
+    color: #fff;
+}
+
+.header::after{
+    content: "";
+    width: 70px;
+    height: 1px;
+    background-color: #fff;
+    display: block;
+    margin-top:-17px ;
+}
+
+.main label{
+    color: #fff;
+    font-size: 12px;
+    text-shadow: 0.2em 0.2em black;
+}
+
+.entrada-dados{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0px;
+}
+
+.entrada-dados input{
+    margin-top: 10px;
+    padding: 5px 5px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: #fff;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .submit{
+    width: 100%;
+    height: 40px;
+    background-color: #00180d;
+    border: none;
+    margin: 10px 0;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    transition: 0.7s;
+    box-shadow: 2px 2px 2px 1px white;
+}
+
+.footer .submit:hover{
+    background-color: white;
+    color: #005f31;
+    font-size: 15px;
+    box-shadow: 2px 2px 2px 1px black;
+}
+
+
+.footer a{
+    text-align: center;
+    font-size: 12px;
+    opacity: 0.8; 
+    color: #fff;
+    text-decoration: none;
+    transition: 0.5s;
+    text-shadow: 0.2em 0.2em black;
+}
+
+.footer a:hover{
+    opacity: none;
+    color: black;
+    text-shadow: none;
+    font-size: 12px;
+}
